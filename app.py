@@ -17,7 +17,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 path = Path().cwd() / 'path' / 'models'
-learner = load_learner(path, 'cancer.pkl')
+learner = load_learner(path, 'Cancer.pkl')
 
 
 @app.route('/', methods=['GET', 'POST'])
